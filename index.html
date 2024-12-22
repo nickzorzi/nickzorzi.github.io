@@ -1,64 +1,159 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Nick's Portfolio</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicolas Zorzi | Digital Media Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+        }
+      }
+    </script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/slideshow.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  </head>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-</head>
+  <body>
+    <ul id="navbar">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <!-- <li class="nav"><a href="projects/index.html">Projects</a></li> -->
+      <li class="nav"><a href="coding/index.html">Coding</a></li>
+      <li class="nav"><a href="3d/index.html">3D Modeling</a></li>
+      <li class="nav"><a href="digitalvideo/index.html">Digital Video</a></li>
+      <li class="nav"><a href="makerfaire/index.html">Maker Faire</a></li>
+      <li class="nav"><a href="aboutme/index.html">About</a></li>
+      <li class="nav"><a href="cv/index.html">CV</a></li>
+    </ul>
+  </body>
 
-<body>
+  <body class="home">
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
- <ul class="navbar-nav">
- 	<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-	<li class="nav-item"><a class="nav-link" href="interships.html">Internships</a></li>
-	<li class="nav-item"><a class="nav-link" href="coding.html">Coding</a></li>
-	<li class="nav-item"><a class="nav-link" href="graphics.html">Graphics</a></li>
-    <li class="nav-item"><a class="nav-link" href="digitalvideo.html">Digital Video</a></li>
-	<li class="nav-item"><a class="nav-link" href="3dmodeling.html">3D Modeling</a></li>
+    <div id="three-container">
 
-</ul> 
-</nav>
+    </div>
 
 
-<div class="container my-5 bg-secondary text-white shadow p-4 mb-4">
-	<style>
-		a {
-	  color: lightgreen;
-	}
-	</style>
+    <div class="content-wrapper" id="front-page">
+      <div class="content-bg" id="main-title">
+        <header>
+          <h1 class="yellow">Nicolas Zorzi</h1>
+          <h2 class="blue">4th Year Digital Media Art Major @SJSU</h2>
+        </header>
+        <main>
+          <p class="title">I like to create art in various madiums, specifically in: Coding, 3D Modeling, and Digital Video.</p>
+          <p class="title">To learn more about my works, check out my projects down below.</p>
+          <p class="title">Thanks for stopping by!</p>
+        </main>
 
-	<div class="row justify-content-md-center">
-		<div class="col-md-5">
-		<h1><br></h1>
-	<img class="img-fluid" src="images/interp.png" alt="welcome" style="width:450px;">
-	<p><i>My Personality</i>, 2022</p>
-		</div>
-		<div class="col-md-7">
-<!--
-	<h1>About Me</h1>
-	<p>Hello and welcome to my portfolio! My name is Nicolas Zorzi, I am a Digital Media Art major here at SJSU. I am a second-generation American who was born and raised in the Bay Area, in San Mateo County. Both my parents were born and raised in Italy, but later immigrated to the US. Due to this, I often travel to Italy to visit my relatives and I also learned how to speak Italian at the same time as English.</p>
-	<p>Since a young age I loved to create art, but high school is where I fell in love with it. More specifically, I fell in love with digital art and video editing and pursued it as a hobby. This passion for art led me to SJSU where I applied and became a student in DMA. Both inside and outside of SJSU, I love to make all sorts of digital art. More specifically I love to make <a href="digitalvideo.html">digital videos</a>, <a href="graphics.html">graphics</a> and <a href="3dmodeling.html">3d modeling</a>. Outside of SJSU, the graphics and digital videos I make are commissioned usually for social media marketing and promotional purposes. For fun, I 3d model video game maps for games such as CS:GO and also make 3d art pieces.</p>
-	<p>In regards to my educational goals, I plan to achieve the best grades in my ability and to strive to graduate with a BFA in DMA. I fully expect to work hard as a student but more importantly as an artist in order to meet the goals and standards set in place in the BFA DMA program area. Additionally, I plan to pursue internships and job opportunities with the expertise I acquire as a DMA student at SJSU. Lastly, I hope to always learn more in order to create more.</p>
--->
-    <h1>About Me</h1>
-            <p>Hello and welcome to my portfolio! My name is Nicolas Zorzi, I am a Digital Media Art major at SJSU. This is the portfolio that got me accepted into the Bachelor of Fine Arts for the DMA major. I got accepted during the Spring Semester of 2023. I added more art pieces to my portfolio, any of them dated 2023 and beyond are works made after I got accepted into the BFA. Additionally, any artowrks and concepts that I make during any <a href="interships.html">internships</a> will also be posted in this portfolio.</p>
-			<p>Since a young age I loved to create art, but high school is where I fell in love with it. More specifically, I fell in love with digital art and video editing and pursued it as a hobby. This passion for art led me to SJSU where I applied and became a student in DMA. Both inside and outside of SJSU, I love to make all sorts of digital art. More specifically I love to make <a href="digitalvideo.html">digital videos</a>, <a href="graphics.html">graphics</a> and <a href="3dmodeling.html">3d modeling</a>. Outside of SJSU, the graphics and digital videos I make are commissioned usually for social media marketing and promotional purposes. For fun, I 3d model video game maps for games such as CS:GO and also make 3d art pieces.</p>
-    <p>In regards to my educational goals, I plan to achieve the best grades in my ability and to strive to graduate with a BFA in DMA. I fully expect to work hard as a student but more importantly as an artist in order to meet the goals and standards set in place in the BFA DMA program area. Additionally, I plan to pursue internships and job opportunities with the expertise I acquire as a DMA student at SJSU. Lastly, I hope to always learn more in order to create more.</p>
-		</div>
-	</div>	
-</div>
+        <!-- <br> -->
 
-</body>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+              <a href="coding/index.html">
+                <img src="images/DevilsAcre.png" style="width:100%">
+              </a>
+            <div class="text"><i>Devil's Acre</i>, 2023</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+              <a href="coding/index.html">
+                <img src="images/DeathTides.png" style="width:100%">
+              </a>
+            <div class="text"><i>Death Tides</i>, 2024</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+              <a href="coding/index.html">
+                <img src="images/MultilingualDilemma.png" style="width:100%">
+              </a>
+            <div class="text"><i>Multilingual Dilemma</i>, 2024</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+              <a href="coding/index.html">
+                <img src="images/SoundBounce.png" style="width:100%">
+              </a>
+            <div class="text"><i>Sound Bounce</i>, 2023</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+              <a href="3d/index.html">
+                <img src="images/OilRig3D.png" style="width:100%">
+              </a>
+            <div class="text"><i>Oil Rig Environment</i>, 2024</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+              <a href="makerfaire/index.html">
+                <img src="images/MicroPerform.png" style="width:100%">
+              </a>
+            <div class="text"><i>Micro Perform</i>, 2024</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+              <a href="digitalvideo/index.html">
+                <img src="images/ThePackageCityResize.png" style="width:100%">
+              </a>
+            <div class="text"><i>The Package</i>, 2024</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+              <a href="digitalvideo/index.html">
+                <img src="images/TheScrewdriver2DiscoveryResize.png" style="width:100%">
+              </a>
+            <div class="text"><i>The Screwdriver 2</i>, 2024</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+      <!-- Start content edits below this line. -->
+      <p>© 2023 by Nicolas Zorzi | <a href="mailto:nicolas.zorzi@sjsu.edu">nicolas.zorzi@sjsu.edu</a></p>
+
+      <!-- Add or remove any networks. -->
+      <ul class="socials">
+        <!-- <li>
+          <a href="#" target="_blank"><img src="images/icon-logo-twitter.png" alt="My Twitter"></a>
+        </li> -->
+        <li>
+          <a href="https://www.linkedin.com/in/nicolas-zorzi-13348524a/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
+        </li>
+        <!-- <li>
+          <a href="#" target="_blank"><img src="images/icon-logo-facebook.png" alt="My Facebook"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="images/icon-logo-youtube.png" alt="My YouTube"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="images/icon-logo-instagram.png" alt="My Instagram"></a>
+        </li> -->
+        <li>
+          <a href="https://zorzini.itch.io/" target="_blank"><img src="images/icon-logo-itchio.png" alt="My Itch.io"></a>
+        </li>
+      </ul>
+      <!-- End content edits here. -->
+    </footer>
+  </body>
 </html>
