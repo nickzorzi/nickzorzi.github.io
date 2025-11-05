@@ -40,7 +40,7 @@ function init() {
     });
     cube = new THREE.Points( geometry, material );
     // cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
+    //scene.add( cube );
 
     //cube 2
 
@@ -53,7 +53,7 @@ function init() {
     cube2.rotateY(2);
     cube2.rotateX(5);
     cube2.rotateZ(5);
-    scene.add( cube2 );
+    //scene.add( cube2 );
 
     //cube 3
 
@@ -66,7 +66,7 @@ function init() {
     cube2.rotateY(5);
     cube3.rotateX(2);
     cube3.rotateZ(2);
-    scene.add( cube3 );
+    //scene.add( cube3 );
 
     //sphere
 
@@ -157,10 +157,10 @@ function animate() {
         // sphere.rotation.y = (mouseY * 0.05) * (elapsedTime * 0.001);
     }
 
-    if (particlesMesh) {
-        particlesMesh.rotation.y = (mouseX * 0.05) * (elapsedTime * 0.001);
-        particlesMesh.rotation.x = (mouseY * 0.05) * (elapsedTime * 0.001);
-    }
+    //if (particlesMesh) {
+    //    particlesMesh.rotation.y = (mouseX * 0.05) * (elapsedTime * 0.001);
+    //    particlesMesh.rotation.x = (mouseY * 0.05) * (elapsedTime * 0.001);
+    //}
 
     //controls.update();
 
