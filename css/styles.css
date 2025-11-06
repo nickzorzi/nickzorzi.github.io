@@ -238,12 +238,16 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
+    row-gap: 20px;
+    padding-bottom: 30px;
 }
 
 .project-item-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    outline-style: dashed;
+    outline-color: #4ea5d9ff;
 }
 
 .single-row {
@@ -252,7 +256,7 @@ footer a:hover {
 }
 
 .project-item {
-    margin: 30px 0;
+    margin: 15px 15px;
 }
 .project-item img {
     width: 400px;
