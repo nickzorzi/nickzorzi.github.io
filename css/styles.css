@@ -437,7 +437,7 @@ footer {
     margin-left: auto;
 } */
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:550px) {
     .nav a {
         display: block;
         color: white;
@@ -450,7 +450,7 @@ footer {
         font-size: 1em;
     }
 }
-@media screen and (max-width:499px) {
+@media screen and (max-width:549px) {
     .nav a {
         padding: 7px 8px;
     }
@@ -460,9 +460,19 @@ footer {
     }
 }
 
-@media screen and (max-width:383px) {
+@media screen and (max-width:450px) {
     .nav a {
-        padding: 3px 4px;
+        padding: 5px 6px;
+    }
+    
+    a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .nav a {
+        padding: 2px 3px;
     }
     
     a {
