@@ -23,3 +23,5 @@ startSlideshow("slideshow3", 3000);
 startSlideshow("slideshow4");
 startSlideshow("slideshow5");
 startSlideshow("slideshow6", 4000);
+startSlideshow("slideshow7");
+startSlideshow("slideshow8");
